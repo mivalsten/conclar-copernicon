@@ -50,7 +50,7 @@
       "DEFAULT": 100,
       "SHOW_MORE": {
         "LABEL": "Pokaż więcej",
-        "NO_MORE": "Nic nie znaleziono.",
+        "NO_MORE": "Więcej nie znaleziono.",
         "NUM_EXTRA": 50
       }
     },
