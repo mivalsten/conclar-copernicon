@@ -5,6 +5,7 @@ import useMeasure from "react-use-measure";
 import { useSpring, animated } from "react-spring";
 import { IoChevronDownCircle } from "react-icons/io5";
 import { HiLink } from "react-icons/hi";
+import { LocalTime } from "../utils/LocalTime";
 import ItemLink from "./ItemLink";
 import Location from "./Location";
 import Tag from "./Tag";
@@ -101,10 +102,16 @@ const ProgramItem = ({ item, forceExpanded }) => {
     });
   }
 
+  const startTime = item.dateAndTime
+  .withTimeZone(LocalTime.conventionTimeZone);
+  const endTime = startTime.add({minutes: item.mins});
+  const endTimeStr = "Koniec o: " +  endTime.toPlainTime().toString({ smallestUnit: 'minute' }) + ", ";
   const duration =
     configData.DURATION.SHOW_DURATION && item.mins ? (
       <div className="item-duration">
-        {configData.DURATION.DURATION_LABEL.replace("@mins", item.mins)}
+        {
+        endTimeStr + configData.DURATION.DURATION_LABEL.replace("@mins", item.mins)
+        }
       </div>
     ) : (
       ""

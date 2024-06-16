@@ -1,48 +1,13 @@
-# About ConClár
 
-ConClár is a browser based convention programme guide.
+# O stronie
+Program Bazyliszka został Wam dostarczony dzięki ConClár, za co dziękujemy twórcom. Tłumaczenie jest nasze, bo Was kochamy i rozumiemy, że nie wszysycy rozumieją angielski.
 
-## About the information page.
+## Jak działa ta strona?
+1. W zakładce "Program" jest cały program (prelekcje, warsztaty czy sesje) na konwencie.
+2. W zakładce "Mój harmonogram" znajdują się punkty programu, przy których w zakładce "Program" zaznaczono ptaszki w kwadracie przy nazwie danego punktu.
+3. Stronka działa lokalnie - to znaczy, że na innym komputerze czy komórce, nie zostaną zapisane wybrane punkty programu.
+4. Ale jest dobra wiadomość! Za pomocą linku lub kodu QR (lub linków/kodów QR, jeśli zaznaczy się mega dużo punktów programu), można swoje wybory przenieść na inne urządzenie. Linki/kody QR znajdą się w zakładce "Mój harmonogram" poniżej wybranych punktów programu.
+5. Zakładka "Strona Główna" prowadzi na stronę główną konwentu.
 
-This is a sample information page. You should customise with an information page specific to your convention.
-
-The information page is composed in [Markdown](https://www.markdownguide.org/basic-syntax/). This is a common standard for formatting text that is easy to follow and safer than HTML. There is a handy [cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-
-You may edit the provided file, `info.md`, or change the INFORMATION.MARKDOWN_URL setting in `config.json`.
-
-## Basic formatting
-
-Supported formatting includes *emphasis* and **strong emphasis** as well as ***really strong emphasis***. ~~Strike through~~ is also possible.
-
-## Bulleted Lists
-
-### Benefits of Markdown
-
-* Easy to maintain
-* Easily readable
-* Fewer risks of dangerous scripts
-
-## Ordered Lists
-
-1. List
-1. of
-1. things.
-    1. Sublist
-    1. things.
-1. More things.
-
-## Tables
-
-Tables are supported:
-
-|Contact area    |Contact no|
-|----------------|----------|
-|Membership      | 555 1234 |
-|Access          | 555 5454 |
-|Dealers         | 555 6789 |
-|Code of Conduct | 555 5555 |
-
-## Task List
-
-* [ ] to do
-* [x] done
+## Czy mój konwent też może używać tego rozwiązania?
+[ConClár](https://github.com/lostcarpark/conclar/) jest darmowym rozwiązaniem OpenSource z którego każdy moze korzystać. Skotaktuj sie z nami jeżeli potrzebujesz pomocy przy tłumaczeniu. Na pewno pomożemy :D 
