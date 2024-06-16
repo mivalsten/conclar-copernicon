@@ -234,7 +234,7 @@
   },
   "FOOTER": {
     "SITE_NOTE_MARKDOWN": "",
-    "CONCLAR_NOTE_MARKDOWN": "Guide powered by [ConClár](https://github.com/lostcarpark/conclar)"
+    "CONCLAR_NOTE_MARKDOWN": "Lista zasilana przez [ConClár](https://github.com/lostcarpark/conclar)"
   },
   "TIMER": {
     "FETCH_INTERVAL_MINS": 30,
