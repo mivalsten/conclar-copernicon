@@ -21,7 +21,7 @@ const ProgramList = ({ program, forceExpanded }) => {
   if (program === null || program.length === 0) {
     return (
       <div className="program">
-        <div className="program-empty">No items found.</div>
+        <div className="program-empty">Nic nie znaleziono. Aby dodać interesujące cię punkty programu zaznacz je na głównej tabelce programowej!</div>
       </div>
     );
   }
