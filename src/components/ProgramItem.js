@@ -103,14 +103,14 @@ const ProgramItem = ({ item, forceExpanded }) => {
   }
 
   const startTime = item.dateAndTime
-  .withTimeZone(LocalTime.conventionTimeZone);
-  const endTime = startTime.add({minutes: item.mins});
-  const endTimeStr = "Koniec o: " +  endTime.toPlainTime().toString({ smallestUnit: 'minute' }) + ", ";
+    .withTimeZone(LocalTime.conventionTimeZone);
+  const endTime = startTime.add({ minutes: item.mins });
+  const endTimeStr = "Koniec o: " + endTime.toPlainTime().toString({ smallestUnit: 'minute' }) + ", ";
   const duration =
     configData.DURATION.SHOW_DURATION && item.mins ? (
       <div className="item-duration">
         {
-        endTimeStr + configData.DURATION.DURATION_LABEL.replace("@mins", item.mins)
+          endTimeStr + configData.DURATION.DURATION_LABEL.replace("@mins", item.mins)
         }
       </div>
     ) : (
@@ -154,32 +154,36 @@ const ProgramItem = ({ item, forceExpanded }) => {
           <label htmlFor={'select_' + id}>{'Click to select ' + item.title}</label>
         </div>
       </div>
-      <div className="item-entry" onClick={toggleExpanded}>
-        <div className="item-title">
-          {chevron}
-          {item.title}
+      <div>
+        <div className="item-entry" onClick={toggleExpanded}>
+          <div className="item-title">
+            {chevron}
+            {item.title}
+          </div>
+          <div className="item-line2">
+            <div className="item-location">{locations}</div>
+            {duration}
+          </div>
         </div>
         <div className="item-line2">
-          <div className="item-location">{locations}</div>
-          {duration}
           <div className="item-people">
-              <ul>{people}</ul>
-            </div>
+            <ul>{people}</ul>
+          </div>
         </div>
         <animated.div className="item-details" style={itemExpandedStyle}>
-          <div className="item-details-expanded" ref={ref}>
-            {permaLink}
-            {/* <div className="item-people">
+            <div className="item-details-expanded" ref={ref}>
+              {permaLink}
+              {/* <div className="item-people">
               <ul>{people}</ul>
             </div> */}
-            <div className="item-tags">{tags}</div>
-            <div
-              className="item-description"
-              dangerouslySetInnerHTML={{ __html: safeDesc }}
-            />
-            <div className="item-links">{links}</div>
-          </div>
-        </animated.div>
+              <div className="item-tags">{tags}</div>
+              <div
+                className="item-description"
+                dangerouslySetInnerHTML={{ __html: safeDesc }}
+              />
+              <div className="item-links">{links}</div>
+            </div>
+          </animated.div>
       </div>
     </div>
   );

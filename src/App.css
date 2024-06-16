@@ -24,12 +24,13 @@
 :root {
   --main-bg: #fff;
   --main-fg: #000;
-  --navigation-button-bg: #ddd;
+  --navigation-button-bg: #8ed1fc;
+  --navigation-button-bg-gradient: linear-gradient(135deg,rgb(100,204,244) 0%,rgb(169,208,121) 100%);
   --navigation-button-fg: #0d172a;
   --navigation-button-border: #e2e8f0;
-  --navigation-button-current-bg: #5b6473; /*#525e73; #343c4b;*/
+  --navigation-button-current-bg: #0693e3; /*#525e73; #343c4b;*/
   --navigation-button-current-fg: #fff;
-  --navigation-button-hover-bg: #1e293b;
+  --navigation-button-hover-bg: #0693e3;
   --navigation-button-hover-fg: #fff;
   --checkbox-switch-bg: white;
   --checkbox-selected-bg: green;
@@ -37,7 +38,7 @@
   --filter-bg: var(--main-bg);
   --filter-fg: var(--main-fg);
   --filter-border: var(--search-border);
-  --filter-select-bg: #bbe;
+  --filter-select-bg: #8ed1fc;
   --filter-select-fg: #000;
   --search-bg: var(--main-bg);
   --search-fg: var(--main-fg);
@@ -55,9 +56,9 @@
   --add-more-button-bg: var(--navigation-button-current-bg);
   --add-more-button-fg: var(--navigation-button-current-fg);
   --program-item-chevron-collapsed: #ccc;
-  --program-item-chevron-expanded: #bbe;
-  --program-time-convention-message: grey;
-  --program-time-local-message: grey;
+  --program-item-chevron-expanded: #8ed1fc;
+  --program-time-convention-message: #8ed1fc;
+  --program-time-local-message: #8ed1fc;
   --program-date-line: #888;
   --program-time-line: #ccc;
   --program-item-line: #bbb;
