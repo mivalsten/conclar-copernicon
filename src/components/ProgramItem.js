@@ -154,7 +154,7 @@ const ProgramItem = ({ item, forceExpanded }) => {
           <label htmlFor={'select_' + id}>{'Click to select ' + item.title}</label>
         </div>
       </div>
-      <div>
+      <div className="item-group">
         <div className="item-entry" onClick={toggleExpanded}>
           <div className="item-title">
             {chevron}

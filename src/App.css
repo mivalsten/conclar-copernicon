@@ -26,9 +26,10 @@
   --main-fg: #000;
   --navigation-button-bg: #8ed1fc;
   --navigation-button-bg-gradient: linear-gradient(135deg,rgb(100,204,244) 0%,rgb(169,208,121) 100%);
-  --navigation-button-fg: #0d172a;
+  --navigation-button-fg: #fff; /*#0d172a;*/
   --navigation-button-border: #e2e8f0;
   --navigation-button-current-bg: #0693e3; /*#525e73; #343c4b;*/
+  --navigation-button-current-bg-gradient: linear-gradient(135deg,rgb(169,208,121) 0%,rgb(100,204,244) 100%); /*#525e73; #343c4b;*/
   --navigation-button-current-fg: #fff;
   --navigation-button-hover-bg: #0693e3;
   --navigation-button-hover-fg: #fff;
@@ -171,6 +172,7 @@ header img {
 
 /* CSS for button 81 from https://getcssscan.com/css-buttons-examples */
 .navigation li a {
+  /*background: var(--navigation-button-bg-gradient);*/
   background-color: var(--navigation-button-bg);
   color: var(--navigation-button-fg);
   border: 0 solid var(--navigation-button-border);
@@ -198,13 +200,17 @@ header img {
 }
 
 .navigation li a.active {
+  background: var(--navigation-button-current-bg-gradient);
   background-color: var(--navigation-button-current-bg);
   color: var(--navigation-button-current-fg);
+  border: var(--navigation-button-current-bg);
+  border-width: 5px;
 }
 
 .navigation li a:hover,
 .navigation li a.active:hover {
-  background-color: var(--navigation-button-hover-bg);
+  background: var(--navigation-button-bg-gradient);
+  /*background-color: var(--navigation-button-hover-bg);*/
   color: var(--navigation-button-hover-fg);
 }
 
@@ -600,6 +606,10 @@ input.switch:checked ~ label:after {
 
 .selection label {
   display: none;
+}
+
+.item-group {
+  width: 100%;
 }
 
 .item {
