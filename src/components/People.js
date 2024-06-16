@@ -119,8 +119,8 @@ const People = () => {
   return (
     <div className="people">
       <div className="people-settings">
-        {thumbnailsCheckbox}
-        {sortCheckbox}
+        {/* {thumbnailsCheckbox}
+        {sortCheckbox} */}
         <TagSelectors
           tags={personTags}
           selTags={selTags}

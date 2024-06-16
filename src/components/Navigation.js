@@ -19,6 +19,9 @@ const Navigation = () => {
           <NavLink to="/">{configData.NAVIGATION.PROGRAM}</NavLink>
         </li>
         <li>
+          <NavLink to="/people">{configData.NAVIGATION.PEOPLE}</NavLink>
+        </li>
+        <li>
           <NavLink to="/myschedule">{configData.NAVIGATION.MYSCHEDULE}</NavLink>
         </li>
         <li>

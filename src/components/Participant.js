@@ -4,38 +4,38 @@ import configData from "../config.json";
 
 const Participant = ({ person, thumbnails, moderator }) => {
   function getParticipantThumbnail(person) {
-    if (thumbnails) {
-      if (person.img) {
-        return (
-          <div className="participant-image">
-            <img
-              src={person.img}
-              alt={person.name}
-              onError={({ currentTarget }) => {
-                currentTarget.onerror = null;
-                currentTarget.style.display = "none";
-              }}
-            />
-          </div>
-        );
-      }
-      if (
-        configData.PEOPLE.THUMBNAILS &&
-        configData.PEOPLE.THUMBNAILS.DEFAULT_IMAGE
-      ) {
-        return (
-          <div className="participant-image participant-default-image">
-            <img
-              src={
-                configData.BASE_PATH +
-                configData.PEOPLE.THUMBNAILS.DEFAULT_IMAGE
-              }
-              alt={person.name}
-            />
-          </div>
-        );
-      }
-    }
+    // if (thumbnails) {
+    //   if (person.img) {
+    //     return (
+    //       <div className="participant-image">
+    //         <img
+    //           src={person.img}
+    //           alt={person.name}
+    //           onError={({ currentTarget }) => {
+    //             currentTarget.onerror = null;
+    //             currentTarget.style.display = "none";
+    //           }}
+    //         />
+    //       </div>
+    //     );
+    //   }
+    //   if (
+    //     configData.PEOPLE.THUMBNAILS &&
+    //     configData.PEOPLE.THUMBNAILS.DEFAULT_IMAGE
+    //   ) {
+    //     return (
+    //       <div className="participant-image participant-default-image">
+    //         <img
+    //           src={
+    //             configData.BASE_PATH +
+    //             configData.PEOPLE.THUMBNAILS.DEFAULT_IMAGE
+    //           }
+    //           alt={person.name}
+    //         />
+    //       </div>
+    //     );
+    //   }
+    // }
     return "";
   }
 

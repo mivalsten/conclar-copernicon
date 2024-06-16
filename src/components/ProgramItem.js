@@ -162,13 +162,16 @@ const ProgramItem = ({ item, forceExpanded }) => {
         <div className="item-line2">
           <div className="item-location">{locations}</div>
           {duration}
+          <div className="item-people">
+              <ul>{people}</ul>
+            </div>
         </div>
         <animated.div className="item-details" style={itemExpandedStyle}>
           <div className="item-details-expanded" ref={ref}>
             {permaLink}
-            <div className="item-people">
+            {/* <div className="item-people">
               <ul>{people}</ul>
-            </div>
+            </div> */}
             <div className="item-tags">{tags}</div>
             <div
               className="item-description"

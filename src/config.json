@@ -31,10 +31,10 @@
     "MYSCHEDULE": "Mój harmonogram",
     "INFO": "Punkt info",
     "SETTINGS": "Ustawienia",
-    "EXTRA": [{ "LABEL": "Strona główna", "URL": "https://bazyliszek.ava.waw.pl" }]
+    "EXTRA": [{ "LABEL": "Strona konwentu", "URL": "https://bazyliszek.ava.waw.pl" }]
   },
   "LOCATIONS": {
-    "SEARCHABLE": false
+    "SEARCHABLE": true
   },
   "APPLICATION": {
     "LOADING": {
@@ -47,7 +47,7 @@
       "LABEL": "Liczba wyświetlanych atrakcji",
       "OPTIONS": [50, 100, 250, 500, 1000],
       "ALL_LABEL": "Pokaż wszystko",
-      "DEFAULT": 100,
+      "DEFAULT": 250,
       "SHOW_MORE": {
         "LABEL": "Pokaż więcej",
         "NO_MORE": "Więcej nie znaleziono.",
@@ -75,7 +75,7 @@
     }
   },
   "TAGS": {
-    "PLACEHOLDER": "Wybierz tagi",
+    "PLACEHOLDER": "Wybierz blok",
     "SEARCHABLE": false,
     "HIDE": false,
     "SEPARATE": [
@@ -181,9 +181,9 @@
     },
     "SEARCH": {
       "SHOW_SEARCH": true,
-      "SEARCH_LABEL": "Search people"
+      "SEARCH_LABEL": "Szukaj prowadzących"
     },
-    "PERSON_HEADER": "Prowadzący: ",
+    "PERSON_HEADER": "Osoba prowadząca: ",
     "BIO": {
       "PURIFY_OPTIONS": {
         "FORBID_ATTR": ["style"]
