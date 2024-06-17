@@ -3,12 +3,15 @@
  */
 
 :root {
-  --main-bg: #000;
+  --accent-green: rgb(128, 182, 128);
+  --main-bg: #444;
   --main-fg: #fff;
-  --navigation-button-bg: #444;
-  --navigation-button-fg: #ddd;
+  --navigation-button-bg: var(--accent-green);
+  --navigation-button-bg-gradient: linear-gradient(135deg,rgb(199, 208, 121) 0%,rgb(128, 182, 128) 100%); /*#525e73; #343c4b;*/
+  --navigation-button-fg: #fff;
   --navigation-button-border: #e2e8f0;
-  --navigation-button-current-bg: #5b6473; /*#525e73; #343c4b;*/
+  --navigation-button-current-bg: var(--accent-green); /*#525e73; #343c4b;*/
+  --navigation-button-current-bg-gradient: linear-gradient(135deg,rgb(128, 182, 128) 0%,rgb(199, 208, 121) 100%); /*#525e73; #343c4b;*/
   --navigation-button-current-fg: #fff;
   --navigation-button-hover-bg: #1e293b;
   --navigation-button-hover-fg: #fff;
@@ -22,18 +25,20 @@
   --filter-select-fg: #000;
   --search-border: hsl(0, 0%, 40%);
   --program-item-chevron-collapsed: #ccc;
-  --program-item-chevron-expanded: #bbe;
-  --program-time-convention-message: grey;
-  --program-time-local-message: grey;
+  --program-item-chevron-expanded: var(--accent-green);
+  --program-time-convention-message: var(--accent-green);
+  --program-time-local-message: var(--accent-green);
   --program-date-line: #888;
   --program-time-line: #ccc;
   --program-item-line: #bbb;
   --program-time-bg: #444;
   --program-tags-fg: #bbb;
   --program-expanded-bg: #333;
-  --permalink-icon-fg: #265c83;
-  --permalink-icon-hover-fg: #7fdbff;
+  --permalink-icon-fg: var(--accent-green);
+  --permalink-icon-hover-fg: rgb(36, 218, 36);
   --participant-bg: #333;
   --participant-link-fg: #eee;
   --participant-link-visited-fg: #ccc;
+  --expand-button-hover-bg: rgb(199, 208, 121);
+
 }
