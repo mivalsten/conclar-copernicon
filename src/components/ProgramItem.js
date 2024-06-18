@@ -102,6 +102,12 @@ const ProgramItem = ({ item, forceExpanded }) => {
     });
   }
 
+  const greenLeaf = item.green_leaf == true ? '🌿 ' : '';
+  const keywords = item.keywords !== ''  ? <div className="item-tags"> <b>{'Słowa kluczowe: '}</b>  {item.keywords}</div> : "";
+  const ageRestrictions = item.age_restrictions !== ''  ? <div className="item-tags"><b>{'Ograniczenia wiekowe: '}</b>  {item.age_restrictions}</div> : "";
+  const triggers = item.triggers !== ''  ? <div className="item-tags"><b>{'Triggery: '}</b>  {item.triggers}</div> : "";
+  const safetyTools = item.safety_tools !== '' ? <div className="item-tags"><b>{'BHS: '}</b>  {item.safety_tools}</div> : "";
+
   const startTime = item.dateAndTime
     .withTimeZone(LocalTime.conventionTimeZone);
   const endTime = startTime.add({ minutes: item.mins });
@@ -158,6 +164,7 @@ const ProgramItem = ({ item, forceExpanded }) => {
         <div className="item-entry" onClick={toggleExpanded}>
           <div className="item-title">
             {chevron}
+            {greenLeaf}
             {item.title}
           </div>
           <div className="item-line2">
@@ -182,6 +189,10 @@ const ProgramItem = ({ item, forceExpanded }) => {
                 dangerouslySetInnerHTML={{ __html: safeDesc }}
               />
               <div className="item-links">{links}</div>
+              {ageRestrictions}
+              {keywords}
+              {triggers}
+              {safetyTools}
             </div>
           </animated.div>
       </div>

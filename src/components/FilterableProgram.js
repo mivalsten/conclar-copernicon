@@ -263,6 +263,9 @@ const FilterableProgram = () => {
           </div>
         </div>
       </div>
+      <div>
+        {'Punkty oznaczone 🌿 są przyjazne dla osób, które nigdy nie były na konwencie.'}
+      </div>
       <div className="program-page">
         <ProgramList program={display} />
       </div>

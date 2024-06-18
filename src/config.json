@@ -21,7 +21,7 @@
   "TIMEZONECODE": "CEST",
   "INTERACTIVE": true,
   "HEADER": {
-    "IMG_SRC": "",
+    "IMG_SRC": "/program/logo192.png",
     "IMG_ALT_TEXT": "",
     "LINEFEED_AFTER_URL": false
   },
@@ -233,7 +233,7 @@
     }
   },
   "FOOTER": {
-    "SITE_NOTE_MARKDOWN": "",
+    "SITE_NOTE_MARKDOWN": "Bazyliszek jest organizowany przez [Avangarda](https://klub.ava.waw.pl)",
     "CONCLAR_NOTE_MARKDOWN": "Lista zasilana przez [ConClár](https://github.com/lostcarpark/conclar)"
   },
   "TIMER": {
