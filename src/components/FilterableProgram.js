@@ -7,6 +7,7 @@ import ResetButton from "./ResetButton";
 import ProgramList from "./ProgramList";
 import ShowPastItems from "./ShowPastItems";
 import { LocalTime } from "../utils/LocalTime";
+import EcoTwoToneIcon from '@material-ui/icons/EcoTwoTone';
 
 const FilterableProgram = () => {
   const program = useStoreState((state) => state.program);
@@ -263,8 +264,14 @@ const FilterableProgram = () => {
           </div>
         </div>
       </div>
-      <div>
-        {'Punkty oznaczone 🌿 są przyjazne dla osób, które nigdy nie były na konwencie.'}
+      <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        flexWrap: 'wrap',
+      }}>
+        {'Punkty oznaczone '}
+        <EcoTwoToneIcon fontSize="large" htmlColor="green" />
+        {' są przyjazne dla osób, które nigdy nie były na konwencie.'}
       </div>
       <div className="program-page">
         <ProgramList program={display} />
