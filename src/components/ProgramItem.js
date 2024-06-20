@@ -67,7 +67,6 @@ const ProgramItem = ({ item, forceExpanded }) => {
 
   const tags = [];
   const itemTags = item.tags.filter((tag => !configData.TAGS.DONTLIST.includes(tag.category)));
-
   for (const tag of itemTags) {
     tags.push(<Tag key={tag.value} tag={tag.label} />);
   }
@@ -110,6 +109,8 @@ const ProgramItem = ({ item, forceExpanded }) => {
   const ageRestrictions = item.age_restrictions !== '' ? <div className="item-tags"><b>{'Ograniczenia wiekowe: '}</b>  {item.age_restrictions}</div> : "";
   const triggers = item.triggers !== '' ? <div className="item-tags"><b>{'Triggery: '}</b>  {item.triggers}</div> : "";
   const safetyTools = item.safety_tools !== '' ? <div className="item-tags"><b>{'BHS: '}</b>  {item.safety_tools}</div> : "";
+  const playersSection = item.max_players === '' && item.min_players === '' ? "" : <div className="item-tags"><b>{'Liczba graczy: '}</b> {item.min_players + ' - ' + item.max_players}</div>;
+
 
   const startTime = item.dateAndTime
     .withTimeZone(LocalTime.conventionTimeZone);
@@ -195,6 +196,7 @@ const ProgramItem = ({ item, forceExpanded }) => {
             />
             <div className="item-links">{links}</div>
             {ageRestrictions}
+            {playersSection}
             {keywords}
             {triggers}
             {safetyTools}
