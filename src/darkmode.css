@@ -13,11 +13,10 @@
   --navigation-button-current-bg: var(--accent-green); /*#525e73; #343c4b;*/
   --navigation-button-current-bg-gradient: linear-gradient(135deg,rgb(128, 182, 128) 0%,rgb(199, 208, 121) 100%); /*#525e73; #343c4b;*/
   --navigation-button-current-fg: #fff;
-  --navigation-button-hover-bg: #1e293b;
+  --navigation-button-hover-bg: rgb(199, 208, 121);
   --navigation-button-hover-fg: #fff;
   --checkbox-switch-bg: #444;
-  --checkbox-selected-bg: green;
-  --checkbox-unselected-bg: red;
+
   --filter-bg: var(--main-bg);
   --filter-fg: var(--main-fg);
   --filter-border: var(--search-border);

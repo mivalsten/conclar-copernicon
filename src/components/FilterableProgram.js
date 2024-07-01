@@ -6,6 +6,7 @@ import TagSelectors from "./TagSelectors";
 import ResetButton from "./ResetButton";
 import ProgramList from "./ProgramList";
 import ShowPastItems from "./ShowPastItems";
+import ShowOnlyBegginerFriendlyItems from "./ShowOnlyBegginerFriendlyItems";
 import { LocalTime } from "../utils/LocalTime";
 import EcoTwoToneIcon from '@material-ui/icons/EcoTwoTone';
 
@@ -15,6 +16,7 @@ const FilterableProgram = () => {
   const tags = useStoreState((state) => state.tags);
 
   const showPastItems = useStoreState((state) => state.showPastItems);
+  const showOnlyBeginnerFriendlyItems = useStoreState((state) => state.showOnlyBeginnerFriendlyItems);
   const { expandAll, collapseAll } = useStoreActions((actions) => ({
     expandAll: actions.expandAll,
     collapseAll: actions.collapseAll,
@@ -137,6 +139,13 @@ const FilterableProgram = () => {
         });
       }
     }
+    //Filter by showOnlyBeginnerFriendlyItems
+    if (showOnlyBeginnerFriendlyItems) {
+      filtered = filtered.filter((item) => {
+        return item.green_leaf;
+      });
+    }
+
     if (LocalTime.isDuringCon(program) && !showPastItems) {
       filtered = LocalTime.filterPastItems(filtered);
     }
@@ -238,6 +247,9 @@ const FilterableProgram = () => {
                 setSearch(e.target.value);
               }}
             />
+          </div>
+          <div className="filter-options">
+            <ShowOnlyBegginerFriendlyItems />
           </div>
         </div>
         <div className="reset-filters">

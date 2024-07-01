@@ -34,8 +34,8 @@
   --navigation-button-hover-bg: #0693e3;
   --navigation-button-hover-fg: #fff;
   --checkbox-switch-bg: white;
-  --checkbox-selected-bg: green;
-  --checkbox-unselected-bg: red;
+  --checkbox-selected-bg: var(--navigation-button-hover-bg);
+  --checkbox-unselected-bg: var(--navigation-button-bg);
   --filter-bg: var(--main-bg);
   --filter-fg: var(--main-fg);
   --filter-border: var(--search-border);

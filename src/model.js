@@ -20,6 +20,7 @@ const model = {
   selectedTimeZone: LocalTime.getStoredSelectedTimeZone(),
   showPastItems: LocalTime.getStoredPastItems(),
   expandedItems: [],
+  showOnlyBeginnerFriendlyItems : false,
   programDisplayLimit: localStorage.getItem("program_display_limit"),
   mySelections: ProgramSelection.getAllSelections(),
   programSelectedLocations: [],
@@ -164,6 +165,10 @@ const model = {
     state.peopleSelectedTags = newTags;
     state.peopleSearch = "";
   }),
+  setShowOnlyBegginerFriendlyItems: action((state, showOnlyBeginnerFriendlyItems) => {
+    state.showOnlyBeginnerFriendlyItems = showOnlyBeginnerFriendlyItems;
+  }),
+
 
   // Actions for selected items.
   setSelection: action((state, selection) => {
