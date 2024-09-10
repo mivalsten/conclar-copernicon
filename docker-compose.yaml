@@ -1,0 +1,19 @@
+services:
+  conclar:
+    image: nginxinc/nginx-unprivileged:alpine3.18-slim
+    restart: "unless-stopped"
+    #ports:
+    #  - 80:3000
+    volumes:
+      - ./build:/usr/share/nginx/html:ro
+      - ./docker/default.conf:/etc/nginx/conf.d/default.conf:ro
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.${ROUTER}.rule=Host("${HOSTNAME}")
+      - traefik.http.services.${ROUTER}.loadbalancer.server.port=8080
+      - traefik.http.routers.${ROUTER}.tls=true
+      - traefik.http.routers.${ROUTER}.tls.certresolver=cloudflare
+networks:
+  default:
+    external: true
+    name: traefik-proxy
