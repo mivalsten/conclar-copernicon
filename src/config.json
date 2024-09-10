@@ -1,9 +1,9 @@
 {
-  "BASE_PATH": "/program",
-  "APP_ID": "bazyl2024",
-  "APP_TITLE": "Program - Bazyliszek 2024",
-  "PROGRAM_DATA_URL": "/program/program.js",
-  "PEOPLE_DATA_URL": "/program/people.js",
+  "BASE_PATH": "/",
+  "APP_ID": "Copernicon 2024",
+  "APP_TITLE": "Program - Copernicon 2024",
+  "PROGRAM_DATA_URL": "/program.js",
+  "PEOPLE_DATA_URL": "/people.js",
   "FETCH_OPTIONS": {
     "cache": "reload",
     "credentials": "omit",
@@ -21,7 +21,7 @@
   "TIMEZONECODE": "CEST",
   "INTERACTIVE": true,
   "HEADER": {
-    "IMG_SRC": "/program/logo192.png",
+    "IMG_SRC": "/logo192.png",
     "IMG_ALT_TEXT": "",
     "LINEFEED_AFTER_URL": false
   },
@@ -31,14 +31,14 @@
     "MYSCHEDULE": "Mój harmonogram",
     "INFO": "Punkt info",
     "SETTINGS": "Ustawienia",
-    "EXTRA": [{ "LABEL": "Strona konwentu", "URL": "https://bazyliszek.ava.waw.pl" }]
+    "EXTRA": [{ "LABEL": "Strona konwentu", "URL": "https://copernicon.pl/" }]
   },
   "LOCATIONS": {
     "SEARCHABLE": true
   },
   "APPLICATION": {
     "LOADING": {
-      "MESSAGE": "Bazyliszek odczytuje program, ale nie umie czytać. Czekaj cierpliwie..."
+      "MESSAGE": "Odczytuję program, ale nie umiem czytać. Czekaj cierpliwie..."
     }
   },
   "PROGRAM": {
@@ -233,7 +233,7 @@
     }
   },
   "FOOTER": {
-    "SITE_NOTE_MARKDOWN": "Bazyliszek jest organizowany przez [Avangarda](https://klub.ava.waw.pl)",
+    "SITE_NOTE_MARKDOWN": "",
     "CONCLAR_NOTE_MARKDOWN": "Lista zasilana przez [ConClár](https://github.com/lostcarpark/conclar)"
   },
   "TIMER": {
